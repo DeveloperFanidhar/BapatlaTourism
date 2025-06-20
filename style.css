@@ -1,3 +1,9 @@
+:root{
+    
+}
+*{
+    
+}
 .head nav{
     display: flex;
     align-items: center;
@@ -8,4 +14,8 @@
 .head nav .logo img{
     width: 100px;
     height: 100px;
+}
+.head nav .nav-links a {
+    text-decoration: none;
+    color: black;
 }
