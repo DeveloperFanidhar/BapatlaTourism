@@ -1,0 +1,11 @@
+.head nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: #fff;
+}
+.head nav .logo img{
+    width: 100px;
+    height: 100px;
+}
