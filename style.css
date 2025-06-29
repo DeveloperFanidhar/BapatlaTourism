@@ -53,19 +53,56 @@ body {
 .header-container nav .navigation {
     display: flex;
     justify-content: space-around;
-    padding: 0 10px;
 }
 .header-container nav .navigation .nav-links {
-    padding: 0 10px;
+    padding: 28px 10px;
+}
+.header-container nav .navigation .nav-links:hover{
+    background-color: #ffffff49;
 }
 .header-container nav .navigation .nav-links a {
     text-decoration: none;
     color: aliceblue;
 }
+.header-container nav .navigation-sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: var(--navBackground);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px var(--navBackground);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+}
+.header-container nav .navigation-sidebar .nav-links{
+    padding: 10px;
+}
+.header-container nav .navigation-sidebar .nav-links a {
+    text-decoration: none;
+    color: aliceblue;
+}
+.header-container nav .navigation-sidebar .navlinks{
+    padding: 10px;
+    align-self: flex-end;
+}
+.header-container nav .navigation-sidebar .navlinks a{
+    text-decoration: none;
+    color: aliceblue   
+}
+#menubar{
+    display: none;
+}
 .header-container .hero {
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-end;
+    align-items: flex-start;
+
 }
 .header-container .hero .detail {
     padding: 60px 30px;
@@ -76,6 +113,11 @@ body {
     font-size: 100px;
     font-weight: 700;
     padding: 60px 0 10px 0;
+}
+.header-container .hero .detail p{
+    width: 50%;
+    font-weight: 600;
+    font-style: italic;
 }
 .header-container .hero .detail .cta-button {
     background: #ffcc00;
@@ -89,4 +131,70 @@ body {
     text-decoration: none;
     color: #000;
     font-weight: bold;
+}
+.header-container .hero .cards-container{
+    align-self: flex-end;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header-container .hero .cards-container .cards{
+    margin: 10px;
+    padding: 10px;
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: transparent;
+    border-radius: 10px;
+}
+.header-container .hero .cards-container .cards .image-card img{
+    width: 200px;
+    border: transparent;
+    border-radius: 10px;
+}
+.header-container .hero .cards-container .cards .image-card{
+    padding: 10px;
+}
+.header-container .hero .cards-container .cards .matter-card h3{
+    padding: 0 0 5px 0;
+}
+.header-container .hero .cards-container .cards .matter-card p{
+    font-size: 13px;
+}
+@media only screen and (max-width: 768px) {
+    .header-container nav .brand .brand-TM #title{
+        font-size: 30px;
+    }
+    #hideonMobile{
+        display: none;
+    }
+    #menubar{
+        display: block;
+    }
+    .header-container .hero .detail h1{
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width: 400px){
+    .header-container .hero .detail {
+    padding: 30px 15px;
+    color: white;
+}
+    .header-container nav .brand .brand-TM #title{
+        font-size: 25px;
+    }
+    .header-container nav .brand .brand-TM #Motto{
+        font-size: 10px;
+    }
+    .header-container nav  .navigation-sidebar{
+        width: 100%
+    }
+}
+@media only screen and (max-width: 325px){
+    .header-container nav .brand .brand-TM{
+        display: none;
+    }
 }

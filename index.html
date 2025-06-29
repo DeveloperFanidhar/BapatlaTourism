@@ -11,7 +11,7 @@
             <nav>
                 <div class="brand">
                     <div class="img">
-                        <img src="assets/logo.png" alt="logo" />
+                        <a href="index.html"><img src="assets/logo.png" alt="logo" /></a>
                     </div>
                     <div class="brand-TM">
                         <p id="title">BapatlaTourism</p>
@@ -20,19 +20,48 @@
                         </p>
                     </div>
                 </div>
-                <div class="navigation">
+                <div class="navigation-sidebar">
+                    <div class="navlinks" onclick = "hideSideBar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></div>
                     <div class="nav-links"><a href="index.html">Home</a></div>
                     <div class="nav-links"><a href="about/index.html">About</a></div>
                     <div class="nav-links"><a href="login/index.html">Login</a></div>
+                </div>
+                <div class="navigation ">
+                    <div id="hideonMobile" class="nav-links"><a href="index.html">Home</a></div>
+                    <div id="hideonMobile" class="nav-links"><a href="about/index.html">About</a></div>
+                    <div id="hideonMobile" class="nav-links"><a href="login/index.html">Login</a></div>
+                    <div id="menubar" class="nav-links" onclick="showSideBar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></div>
                 </div>
             </nav>
             <div class="hero">
                 <div class="detail">
                     <h1>Discover Bapatla</h1>
-                    <p>Explore the serene beaches, lush greenery, and rich culture of Andhra Pradesh’s coastal jewel.</p>
+                    <p>"Explore the serene beaches, lush greenery, and rich culture of Andhra Pradesh’s coastal jewel."</p>
                     <button class="cta-button" type="button"><a href="explore/index.html" >Explore Now</a></button>
                 </div>
-                <div class="cards-container"></div>
+                <div class="cards-container">
+                    <div class="cards">
+                        <div class="image-card"><img src="assets/suryalanka.jpg" alt="Suryalanka Beach"></div>
+                        <div class="matter-card">
+                            <h3>Suryalanka Beach</h3>
+                            <p>A serene coastal getaway known for its wide sandy shores, calm waves, and breathtaking sunsets, making it a perfect spot for relaxation and beachside fun.</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="image-card"><img src="assets/pandurangapuram.jpg" alt="Pandurangapuram Beach"></div>
+                        <div class="matter-card">
+                            <h3>Pandurangapuram Beach</h3>
+                            <p>A peaceful retreat with untouched natural beauty, gentle sea breeze, and a quiet shoreline ideal for solitude and scenic walks.</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="image-card"><img src="assets/nizampatnam.jpg" alt="Nizampatnam Harbor"></div>
+                        <div class="matter-card">
+                            <h3>Nizampatnam Harbor</h3>
+                            <p>A historic fishing port blending maritime charm with scenic estuaries, offering glimpses of local culture and coastal livelihoods.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <script src="script.js"></script>
