@@ -235,6 +235,8 @@ body {
         width: 100%
     }
 }
+
+/* Responsive Design: brand titlle removal for very small screens */
 @media only screen and (max-width: 325px){
     .header-container nav .brand .brand-TM{
         display: none;
