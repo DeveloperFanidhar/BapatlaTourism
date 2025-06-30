@@ -1,16 +1,25 @@
+<!--
+    BapatlaTourism Homepage
+    Author: [Your Name]
+    Description: Main landing page for BapatlaTourism website. Features navigation, hero section, and highlights of famous locations.
+-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Meta tags and page title -->
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>HomePage | BapatlaTourism</title>
+        <!-- Main stylesheet -->
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <div class="header-container">
+            <!-- Navigation Bar -->
             <nav>
                 <div class="brand">
                     <div class="img">
+                        <!-- Logo linking to homepage -->
                         <a href="index.html"><img src="assets/logo.png" alt="logo" /></a>
                     </div>
                     <div class="brand-TM">
@@ -20,26 +29,41 @@
                         </p>
                     </div>
                 </div>
+                <!-- Sidebar navigation for mobile -->
                 <div class="navigation-sidebar">
-                    <div class="navlinks" onclick = "hideSideBar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></div>
+                    <div class="navlinks" onclick = "hideSideBar()">
+                        <a href="#">
+                            <!-- Close icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                        </a>
+                    </div>
                     <div class="nav-links"><a href="index.html">Home</a></div>
                     <div class="nav-links"><a href="about/index.html">About</a></div>
                     <div class="nav-links"><a href="login/index.html">Login</a></div>
                 </div>
+                <!-- Main navigation for desktop -->
                 <div class="navigation ">
                     <div id="hideonMobile" class="nav-links"><a href="index.html">Home</a></div>
                     <div id="hideonMobile" class="nav-links"><a href="about/index.html">About</a></div>
                     <div id="hideonMobile" class="nav-links"><a href="login/index.html">Login</a></div>
-                    <div id="menubar" class="nav-links" onclick="showSideBar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></div>
+                    <div id="menubar" class="nav-links" onclick="showSideBar()">
+                        <a href="#">
+                            <!-- Hamburger menu icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                        </a>
+                    </div>
                 </div>
             </nav>
+            <!-- Hero Section -->
             <div class="hero">
                 <div class="detail">
                     <h1>Discover Bapatla</h1>
                     <p>"Explore the serene beaches, lush greenery, and rich culture of Andhra Pradesh’s coastal jewel."</p>
                     <button class="cta-button" type="button"><a href="explore/index.html" >Explore Now</a></button>
                 </div>
+                <!-- Cards for famous locations -->
                 <div class="cards-container">
+                    <!-- Card 1: Suryalanka Beach -->
                     <div class="cards">
                         <div class="image-card"><img src="assets/suryalanka.jpg" alt="Suryalanka Beach"></div>
                         <div class="matter-card">
@@ -47,6 +71,7 @@
                             <p>A serene coastal getaway known for its wide sandy shores, calm waves, and breathtaking sunsets, making it a perfect spot for relaxation and beachside fun.</p>
                         </div>
                     </div>
+                    <!-- Card 2: Pandurangapuram Beach -->
                     <div class="cards">
                         <div class="image-card"><img src="assets/pandurangapuram.jpg" alt="Pandurangapuram Beach"></div>
                         <div class="matter-card">
@@ -54,6 +79,7 @@
                             <p>A peaceful retreat with untouched natural beauty, gentle sea breeze, and a quiet shoreline ideal for solitude and scenic walks.</p>
                         </div>
                     </div>
+                    <!-- Card 3: Nizampatnam Harbor -->
                     <div class="cards">
                         <div class="image-card"><img src="assets/nizampatnam.jpg" alt="Nizampatnam Harbor"></div>
                         <div class="matter-card">
@@ -64,6 +90,7 @@
                 </div>
             </div>
         </div>
+        <!-- Main JavaScript file -->
         <script src="script.js"></script>
     </body>
 </html>

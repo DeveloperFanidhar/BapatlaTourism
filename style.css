@@ -1,3 +1,10 @@
+/*
+    style.css for BapatlaTourism Homepage
+    Author: Gavini Fanidhar
+    Description: Styles for the homepage layout, navigation, hero section, cards, and responsive design.
+*/
+
+/* Root CSS variables for fonts and colors */
 :root {
     --primaryfont: "Roboto", sans-serif;
     --secondaryfont: "Abril Fatface", serif;
@@ -7,15 +14,20 @@
     --color3: rgb(209, 244, 241);
     --navLogo: 70px;
 }
+
+/* Reset and base font settings */
 * {
     margin: 0;
     padding: 0;
     font-family: var(--primaryfont);
     font-optical-sizing: auto;
 }
+
 body {
     min-height: 100vh;
 }
+
+/* Header and background image styling */
 .header-container {
     min-height: 720px;
     background-image: url("assets/suryalanka-guntur-andhra-pradesh-1-attr-hero.jpeg");
@@ -23,47 +35,59 @@ body {
     background-size: cover;
     background-position: center;
 }
+
+/* Navigation bar styles */
 .header-container nav {
     background-color: var(--navBackground);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .header-container nav .brand {
     display: flex;
     justify-content: space-between;
 }
+
 .header-container nav .brand .img img {
     width: var(--navLogo);
     height: var(--navLogo);
     padding: 0 10px;
 }
+
 .header-container nav .brand .brand-TM #title {
     font-size: 35px;
     font-weight: 700;
     color: var(--color1);
     padding: 5px 0 0 0;
 }
+
 .header-container nav .brand .brand-TM #Motto {
     font-weight: 500;
     font-style: italic;
     font-size: 15px;
     color: var(--color2);
 }
+
 .header-container nav .navigation {
     display: flex;
     justify-content: space-around;
 }
+
 .header-container nav .navigation .nav-links {
     padding: 28px 10px;
 }
+
 .header-container nav .navigation .nav-links:hover{
     background-color: #ffffff49;
 }
+
 .header-container nav .navigation .nav-links a {
     text-decoration: none;
     color: aliceblue;
 }
+
+/* Sidebar navigation for mobile */
 .header-container nav .navigation-sidebar{
     position: fixed;
     top: 0;
@@ -79,46 +103,57 @@ body {
     align-items: center;
     justify-content:flex-start;
 }
+
 .header-container nav .navigation-sidebar .nav-links{
     padding: 10px;
 }
+
 .header-container nav .navigation-sidebar .nav-links a {
     text-decoration: none;
     color: aliceblue;
 }
+
 .header-container nav .navigation-sidebar .navlinks{
     padding: 10px;
     align-self: flex-end;
 }
+
 .header-container nav .navigation-sidebar .navlinks a{
     text-decoration: none;
     color: aliceblue   
 }
+
+/* Hamburger menu icon hidden by default */
 #menubar{
     display: none;
 }
+
+/* Hero section layout */
 .header-container .hero {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-
 }
+
 .header-container .hero .detail {
     padding: 60px 30px;
     color: white;
 }
+
 .header-container .hero .detail h1 {
     font-family: var(--secondaryfont);
     font-size: 100px;
     font-weight: 700;
     padding: 60px 0 10px 0;
 }
+
 .header-container .hero .detail p{
     width: 50%;
     font-weight: 600;
     font-style: italic;
 }
+
 .header-container .hero .detail .cta-button {
     background: #ffcc00;
     padding: 15px 30px;
@@ -127,11 +162,14 @@ body {
     margin-top: 30px;
     display: inline-block;
 }
+
 .header-container .hero .detail .cta-button a {
     text-decoration: none;
     color: #000;
     font-weight: bold;
 }
+
+/* Cards container and card styles */
 .header-container .hero .cards-container{
     align-self: flex-end;
     display: flex;
@@ -164,6 +202,8 @@ body {
 .header-container .hero .cards-container .cards .matter-card p{
     font-size: 13px;
 }
+
+/* Responsive design: tablet and mobile adjustments */
 @media only screen and (max-width: 768px) {
     .header-container nav .brand .brand-TM #title{
         font-size: 30px;
@@ -178,6 +218,8 @@ body {
         font-size: 50px;
     }
 }
+
+/* Responsive design: small mobile adjustments */
 @media only screen and (max-width: 400px){
     .header-container .hero .detail {
     padding: 30px 15px;
