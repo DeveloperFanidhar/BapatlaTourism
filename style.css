@@ -168,41 +168,35 @@ body {
     color: #000;
     font-weight: bold;
 }
-
-/* Cards container and card styles */
-.header-container .hero .cards-container{
-    align-self: flex-end;
+.cards-container{
     display: flex;
-    align-items: flex-end;
     justify-content: center;
-}
-.header-container .hero .cards-container .cards{
-    margin: 10px;
-    padding: 10px;
-    width: 400px;
-    height: 200px;
-    background-color: white;
-    display: flex;
-    justify-content: space-around;
     align-items: center;
+    background:rgba(250, 243, 146, 0.27);
+    max-height: 600px;
+}
+.cards-wrapper{
+    margin: 0 60px 35px;
+    padding: 20px 10px;
+}
+.cards-list{
+    width: 400px !important;
+    display: block ;
+    background-color: white;
+    margin: 15px;
     border: transparent;
+    border-radius: 20px;
+    padding: 18px;
+}
+.cards-list .img img{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
     border-radius: 10px;
 }
-.header-container .hero .cards-container .cards .image-card img{
-    width: 200px;
-    border: transparent;
-    border-radius: 10px;
+.cards-list .matter-card{
+    padding: 5px 0;
 }
-.header-container .hero .cards-container .cards .image-card{
-    padding: 10px;
-}
-.header-container .hero .cards-container .cards .matter-card h3{
-    padding: 0 0 5px 0;
-}
-.header-container .hero .cards-container .cards .matter-card p{
-    font-size: 13px;
-}
-
 /* Responsive design: tablet and mobile adjustments */
 @media only screen and (max-width: 768px) {
     .header-container nav .brand .brand-TM #title{
