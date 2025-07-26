@@ -23,13 +23,26 @@
     font-optical-sizing: auto;
 }
 
+/* Scrollbar Settings */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--color1);
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--color2);
+    border-radius: 4px;
+}
+/* Body Styles */
 body {
     min-height: 100vh;
 }
 
 /* Header and background image styling */
 .header-container {
-    min-height: 720px;
+    min-height: 600px;
     background-image: url("assets/suryalanka-guntur-andhra-pradesh-1-attr-hero.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -78,7 +91,7 @@ body {
     padding: 28px 10px;
 }
 
-.header-container nav .navigation .nav-links:hover{
+.header-container nav .navigation .nav-links:hover {
     background-color: #ffffff49;
 }
 
@@ -88,7 +101,7 @@ body {
 }
 
 /* Sidebar navigation for mobile */
-.header-container nav .navigation-sidebar{
+.header-container nav .navigation-sidebar {
     position: fixed;
     top: 0;
     right: 0;
@@ -101,10 +114,10 @@ body {
     display: none;
     flex-direction: column;
     align-items: center;
-    justify-content:flex-start;
+    justify-content: flex-start;
 }
 
-.header-container nav .navigation-sidebar .nav-links{
+.header-container nav .navigation-sidebar .nav-links {
     padding: 10px;
 }
 
@@ -113,18 +126,18 @@ body {
     color: aliceblue;
 }
 
-.header-container nav .navigation-sidebar .navlinks{
+.header-container nav .navigation-sidebar .navlinks {
     padding: 10px;
     align-self: flex-end;
 }
 
-.header-container nav .navigation-sidebar .navlinks a{
+.header-container nav .navigation-sidebar .navlinks a {
     text-decoration: none;
-    color: aliceblue   
+    color: aliceblue;
 }
 
 /* Hamburger menu icon hidden by default */
-#menubar{
+#menubar {
     display: none;
 }
 
@@ -148,7 +161,7 @@ body {
     padding: 60px 0 10px 0;
 }
 
-.header-container .hero .detail p{
+.header-container .hero .detail p {
     width: 50%;
     font-weight: 600;
     font-style: italic;
@@ -168,71 +181,78 @@ body {
     color: #000;
     font-weight: bold;
 }
-.cards-container{
+.cards-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    background:rgba(250, 243, 146, 0.27);
+    background: rgba(250, 243, 146, 0.27);
     max-height: 600px;
 }
-.cards-wrapper{
+.cards-wrapper {
     margin: 0 60px 35px;
     padding: 20px 10px;
 }
-.cards-list{
+.cards-list {
     width: 400px !important;
-    display: block ;
+    display: block;
     background-color: white;
     margin: 15px;
     border: transparent;
     border-radius: 20px;
     padding: 18px;
 }
-.cards-list .img img{
+.cards-list .img img {
     width: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
     border-radius: 10px;
 }
-.cards-list .matter-card{
+.cards-list .matter-card {
     padding: 5px 0;
 }
+.foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 /* Responsive design: tablet and mobile adjustments */
 @media only screen and (max-width: 768px) {
-    .header-container nav .brand .brand-TM #title{
+    .header-container nav .brand .brand-TM #title {
         font-size: 30px;
     }
-    #hideonMobile{
+    #hideonMobile {
         display: none;
     }
-    #menubar{
+    #menubar {
         display: block;
     }
-    .header-container .hero .detail h1{
+    .header-container .hero .detail h1 {
         font-size: 50px;
     }
 }
 
 /* Responsive design: small mobile adjustments */
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 400px) {
     .header-container .hero .detail {
-    padding: 30px 15px;
-    color: white;
-}
-    .header-container nav .brand .brand-TM #title{
+        padding: 30px 15px;
+        color: white;
+    }
+    .header-container nav .brand .brand-TM #title {
         font-size: 25px;
     }
-    .header-container nav .brand .brand-TM #Motto{
+    .header-container nav .brand .brand-TM #Motto {
         font-size: 10px;
     }
-    .header-container nav  .navigation-sidebar{
-        width: 100%
+    .header-container nav .navigation-sidebar {
+        width: 100%;
     }
 }
 
 /* Responsive Design: brand titlle removal for very small screens */
-@media only screen and (max-width: 325px){
-    .header-container nav .brand .brand-TM{
+@media only screen and (max-width: 325px) {
+    .header-container nav .brand .brand-TM {
         display: none;
     }
 }
